@@ -7,6 +7,10 @@ class Product {
   String name;
   String categoryCode;
   double price;
+  String unit;
+  String imageUrl;
+  String description;
+  List<String> benefits;
 
   Product(this.id, this.name, this.categoryCode, this.price);
   factory Product.fromJson(Map<String, dynamic> json) =>

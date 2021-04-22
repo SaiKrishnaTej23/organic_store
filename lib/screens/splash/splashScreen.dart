@@ -6,8 +6,6 @@ class SplashScreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 5,
-      navigateAfterSeconds: new RootScreen(),
       backgroundColor: Colors.white,
       title: new Text('Organic Store',textScaleFactor: 2,),
       image: new Image.asset(

@@ -22,8 +22,13 @@ class _RootScreenState extends State<RootScreen> {
     // TODO: implement didChangeDependencies
     super.didChangeDependencies();
     checkUserLogin().then((value) => {
-          if (value) {Provider.of<Root>(context).updateUser(getLoggedInUser())}
-        });
+          if (value) {
+            Provider.of<Root>(context, listen: false).updateUser(getLoggedInUser())
+          }
+          else {
+
+          }
+    });
   }
 
   @override
